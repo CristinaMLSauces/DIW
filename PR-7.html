@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR7</title>
+    <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+        }
+       svg[hidden]{
+           display: none;
+        }
+        svg{
+            width: 16px;height: 16px;
+        }
+        ul {
+            list-style: none;
+           
+        }
+        .menu{
+            display: flex;
+            justify-content: space-evenly;
+            width: 600px;
+        }
+        .menu>li{
+            flex: 1 200px;
+            background-color:burlywood;
+            height: 48px;
+        }
+        a{
+            display: block;
+            height: 100%;background-color: tomato;
+            line-height: 48px;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+        a:hover{background:rgb(161, 226, 161);}
+        .sub{
+            flex-direction: column;
+            display: none;
+        }
+        .menu>li:focus-within .sub{
+            display: block;
+        }
+        .menu>li:focus-within svg{
+            transform: scaleY(-1);
+        }
+
+    </style>
+</head>
+<body>
+   
+    <svg hidden>
+        <symbol id="arrow" viewbox="0 0 16 16" >  
+            <polyline points="4 6, 8 10, 12 6" stroke="#000" stroke-width="3" fill="transparent" stroke-linecap="round" />
+        </symbol>
+    </svg>
+
+      <ul class="menu">
+          <li><a href="#">Inicio
+            <svg>
+                <use xlink:href="#arrow" />
+            </svg>
+            </a>
+            <ul class="sub">
+                <li ><a href="#">Centro</a></li>
+                <li ><a href="#">Alumnos</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Secretaria
+            <svg>
+                <use xlink:href="#arrow" />
+            </svg>
+        </a>
+            <ul class="sub">
+                <li ><a href="#">Titulos</a></li>
+                <li ><a href="#">Certificados</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contacto</a></li>
+      </ul>
+    
+</body>
+</html>

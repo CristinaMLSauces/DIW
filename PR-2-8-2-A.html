@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PR2-8-2 A</title>
+
+        <style>
+        
+        article.acordeon{
+            display: block;
+            width: 41%;
+            background-color: rgb(172, 170, 170);
+        }
+
+        section{
+            display: block;
+            width: 100%;
+            height: 30px;
+            overflow: hidden;
+
+        }
+        h3{
+            width: 100%;
+            line-height: 30px;
+            margin: 0;
+            color:rgb(106, 106, 250);
+        }
+
+        h3 a{
+            
+            display: block;
+            width: 100%;
+            line-height: 30px;
+            text-decoration: none;
+            color: inherit;
+            
+        }
+        section:target{
+            height: 110px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        section:target h3{
+            background-color: rgb(172, 170, 170);
+        }
+        p{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+       
+        <article class="acordeon">
+
+            <section id="uno">
+                <h3><a href="#uno">Titulo 1</a></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi debitis dolores corrupti quod numquam qui porro laudantium neque, </p>
+            </section>
+            
+            <section id="dos">
+                <h3><a href="#dos">Titulo 2</a></h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum non esse harum voluptates sed laboriosam ullam corporis rem ipsum. </p>
+            </section>
+            
+            <section id="tres">
+                <h3><a href="#tres">Titulo 3</a></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos deleniti debitis officiis dolore, eum facilis asperiores eius soluta </p>
+            </section>
+           
+        </article>
+            
+         
+        </div>
+    </body>
+
+
+</html>

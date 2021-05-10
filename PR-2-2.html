@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>PR-2-2</title>
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+                box-sizing:border-box;
+            }
+            header{
+                background: rgb(186, 190, 194);
+                display: flex;   
+                justify-content: space-evenly;
+                
+                align-items: center;
+                height: 10vh;
+            }
+
+            main{
+                background: rgb(250, 98, 81);
+                height: 80vh;
+                display:flex;
+
+            }
+            nav{
+                
+                width: 20vw;
+                margin: 5px 5px;
+                /* height: 10vh; */
+                
+            }
+            ul{
+                margin-left: 20px;
+                background-color: rgb(186, 190, 194);
+            }
+
+            section{
+                background: rgb(142, 172, 202);  
+                width: 60vw;
+                display: flex;
+                flex-direction: column;  
+                justify-content: space-evenly;
+            }
+
+            article p,h2,h3{
+                margin-top: 20px;
+            }
+            
+            article:nth-of-type(2){
+                background: pink;
+            }
+
+            article h2,h3{
+                display: flex;
+                flex-direction: column;   
+                align-items: center;
+               
+            }
+            
+            aside {
+                height: 100vh;
+                margin-left: 10px;
+                width: 20vw;
+                height: 40vh;
+                background:rgb(182, 241, 180);  
+            }
+            footer{
+                background: grey;
+                height: 10vh;
+            }
+           article:nth-of-type(2) p:nth-of-type(n){
+            background: rgb(255, 9, 9);
+           }
+           h1 + h2 { color: red}
+        </style>
+        
+    </head>
+    <body>
+        <h2>Hermano 1</h2>
+        <h1>Titulo1</h1>
+        <h2>Hermano 1</h2>
+        <p> Lorem </p>
+        <h2>Hermano 2</h2>
+         
+        <header>
+            <h1>CABECERA</h1>
+            <img src="http://picsum.photos/id/106/100/100"> <p>Lorem ipsum, dolor <br>sit amet consectetur</p>
+
+        </header>
+       
+
+        <main>
+            <nav>
+                <ul>
+                    <li><a href=""> Inicio</a></li>
+                    <li><a href=""> Opciones</a></li>
+                    <li><a href=""> Servicios</a></li>
+                    <li><a href=""> Contacto</a></li> 
+                </ul>
+            </nav>
+
+            <section>
+                <article>
+                    <h2>Mi primer articulo</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente dicta delectus </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatibus dicta </p>
+                </article>
+
+                <article>
+                    <h2>Mi segundo articulo</h2>
+                    <h3>Subtitulo 2 articulo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolores enim illum asperiste eum ea consectetur numquam nobis!</p>
+                    <div>comentarios
+                            <p>Nietoo
+                                <div><p>Nieto2</p></div>
+                                
+                            </p>
+                            
+                        </div>
+                    <p>Segundo Hijo</p>
+                </article>
+
+                <article>
+                    <h2>Mi tercer articulo</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis cumque dignissunt iste quae, suscipit ullam.</p>
+                        <p>Diseño de Interfaces Web I.E.S Los sauces</p>
+                    </article>
+
+            </section>
+
+            <aside>
+                    <p>Aqui tenemos nuestra seccion de Links interesantes</p>
+                    <p>Uso de elemento details</p>
+                    <details>
+                        <summary>Desplegable</summary> 
+                        <ul>
+                            <li>Hola</li>
+                            <li>Hola</li>
+                            <li>Hola</li>
+                        </ul>
+                    </details>
+            </aside>
+
+        </main>
+        <footer>Todos los derechos reservados.</footer>
+
+    </body>
+
+
+</html>

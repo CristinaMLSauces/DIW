@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .wrapper{
+      display: flex;    
+      /* gap: 10px 20px; */
+      background: grey;    
+      height: 30vh;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 50px;
+    }
+    img{      
+      flex: 0 1 100px;
+      width: 100px;  
+    }
+  
+    img:nth-child(2n){
+      /* border: 2px solid red; */
+    align-self: flex-start;
+    }
+
+
+    .box{
+      background: grey;    
+      height: 30vh; 
+      position: relative;    
+    }
+    .box img:nth-child(2n){
+        position:relative;
+        top: 50%;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <img src="http://picsum.photos/id/500/200/200">
+    <img src="http://picsum.photos/id/501/200/200">
+    <img src="http://picsum.photos/id/502/200/200">
+    <img src="http://picsum.photos/id/503/200/200">
+    <img src="http://picsum.photos/id/504/200/200">
+  </div>
+  <div class="box">
+    <img src="http://picsum.photos/id/500/200/200">
+    <img src="http://picsum.photos/id/501/200/200">
+    <img src="http://picsum.photos/id/502/200/200">
+    <img src="http://picsum.photos/id/503/200/200">
+    <img src="http://picsum.photos/id/504/200/200">
+  </div>
+  <footer>
+
+  </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;box-sizing: border-box;
+        }
+        .btnMenu:focus-within ~ .menu{
+            display: none;
+        }
+        .menu, .sub, .sub2{
+            display: flex;
+            list-style: none;
+            
+        }
+        .sub{
+            width: 100%;
+            display: none;   
+        }
+        .sub2{
+            width: 100%;
+            display: none;
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 48px;
+            width: 100%;
+            text-decoration: none;
+            font-family:'Segoe UI', sans-serif;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background: violet;
+ 
+        }
+      
+        .sub2 li a{
+            background: aquamarine !important;
+        }
+        a:hover{
+            background: gold;
+        }
+        .menu >li , .sub li{
+                position: relative;
+                width: 200px;
+            }
+
+        @media (max-width:576px){
+            .menu, .sub , .sub2{
+                flex-direction: column;
+                flex: 1 100vw;
+            }
+            .sub li:focus-within .sub2{
+                position: absolute;
+                display: flex;
+                position:absolute;
+                left: 100%;
+                top:0;
+            }
+            .menu li:focus-within .sub{
+                    display: flex;
+                    position:absolute;
+            }
+        }
+        @media screen and (min-width:576px){
+            .menu {
+                /* width: 500px; */
+                justify-content: space-between;
+            }
+            .menu li{
+                flex:1 auto;
+            }
+            .sub, .sub2{
+            flex-direction: column;
+            }
+
+            .menu li:focus-within .sub{
+                    display: flex;
+            }
+            .sc:focus-within .sub{
+                    display: flex;
+            }
+            
+            .sub li:focus-within .sub2{
+                position: absolute;
+                left: 100%;
+                top:0;
+                display: flex;
+            }
+        }    
+    </style>
+</head>
+<body>
+    <nav >
+        <button class="btnMenu">menu</button>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Alumnos</a></li>
+            <li class="sc"><a href="#">Secretaria --></a>
+                <ul class="sub">
+                    <li><a href="#">Admision</a></li>
+                    <li><a href="#">Certificados --></a>
+                        <ul class="sub2">
+                            <li><a href="#">Cursado</a></li>
+                            <li><a href="#">Notas</a></li>
+                            <li><a href="#">matricula</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Titulos</a></li>
+                </ul>
+            </li>                
+            <li><a href="#">Contacto</a>
+                <ul class="sub">
+                    <li><a href="#">email</a></li>
+                    <li><a href="#">movil</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <img src="http://picsum.photos/id/16/500/500" alt="imagen">
+</body>
+</html>

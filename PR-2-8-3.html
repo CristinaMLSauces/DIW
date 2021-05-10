@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 10px;
+            background: #33485d;
+        }
+        nav{
+            position: fixed;
+            width: 100vw;height: 55px;
+            background: #247777;
+            border: 2px solid white;
+            border-radius: 3px;
+        }
+        .hamburguer{
+            width: 50px;
+            height: 50px;
+            background: grey;
+            border-radius: 3px;
+            position: relative;
+            cursor: pointer;
+        }
+        .hamburguer::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top:7px;
+            left: 5px;
+            width: 40px;
+            height: 8px;
+            background: #ffffff;
+            box-shadow: 0px 13px 0  #ffffff,
+                        0px 26px 0  #ffffff;
+        }
+        input{
+            display: none;
+        }
+        .menu{
+            list-style: none;
+            width: 300px;
+            background: #5b8579;
+            margin-top: 5px;
+            display: none;
+            height: 70vh;
+        }
+        .menu a{
+            display: block;
+            text-decoration: none;
+            color:white;
+            font-family:'Segoe UI', sans-serif;
+            font-size: 1.2rem;
+            width: 100%;
+            line-height: 48px;
+            padding-left: 5px;
+            border-bottom: 1px solid white;
+        }
+        .menu a:hover{
+            background: rgb(225, 148, 255);
+        }
+        #boton:checked ~ .menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <input type="checkbox" name="boton" id="boton">
+        <label for="boton">
+            <div class="hamburguer"></div>
+        </label>
+        
+
+    
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Alumnos</a></li>
+        <li><a href="#">Secretaria</a></li>
+        <li><a href="#">Profesorado</a></li>
+    </ul>
+    </nav>
+
+</body>
+</html>
