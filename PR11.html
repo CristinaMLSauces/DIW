@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+       
+        .columna1{
+            flex: 60%;
+        }
+        .columna2{
+            flex: 40%;
+        }
+        main{
+            background: green;
+            height: 50%;
+        }
+        .articulos{
+            display:flex;
+            height: 30%;
+            align-items: stretch;
+        }
+        article:nth-last-of-type(1){
+            background:rgb(112, 80, 9);
+            flex: 50%;
+            height: 100%;
+
+        }
+        article:nth-last-of-type(2){
+            background:rgb(138, 93, 10);
+            flex: 50%;
+            height: 100%;
+        }
+        footer{
+            background: grey;
+            height: 20%;
+
+        }
+        nav{
+            background: red;
+            height: 20%;
+        }
+        aside{
+            background: purple;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="columna1">
+        <main>
+            main
+        </main>
+        <div class="articulos">
+            <article>
+                article1
+            </article>
+            <article>
+                article2
+            </article>
+        </div>
+        <footer>
+            footer
+        </footer>
+    </div>
+    <div class="columna2">
+        <nav>
+            nav
+        </nav>
+        <aside>
+            aside
+        </aside>
+    </div>
+</body>
+</html>
